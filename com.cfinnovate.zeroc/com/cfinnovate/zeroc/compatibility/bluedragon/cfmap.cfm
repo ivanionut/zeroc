@@ -1,0 +1,1 @@
+<cfmapping logicalpath="#attributes.map#" directorypath="#attributes.path#">

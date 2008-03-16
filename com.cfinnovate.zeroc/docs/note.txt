@@ -1,0 +1,3 @@
+ActionBean Resolver Rules:
+
+It must be in a Mapping (server or 
