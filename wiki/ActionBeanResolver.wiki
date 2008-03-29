@@ -1,0 +1,11 @@
+# This describes, in detail, how The ActionBean resolver auto wires beans.
+
+= ActionBean Resolution =
+
+At the core of ZeroC is the ActionBean resolver. This class is paramount to the framework, as it maps URL requests to action beans. The resolver, like most of the framework, is engineered to be lightweight and simple. Inorder to be as lightweight as possible there are a couple of convensions that are enforced. Below are the conventions the resolver uses to map URLs to your ActionBeans:
+
+* Only CFCs ending with Action or ActionBean will be evaluated.
+* ActionBeans must be contained in pagackes: web,zeroc,action and controller
+* In order to ensure ZeroC to evaluate all Application Mappings accurately use ZeroCs mappings tag (this also will ensure compatibility between BlueDragon and ColdFusion!). 
+*The remainin package structure after an identifying package subsystem is translated to the URL.
+** com.exam.pl.controller.section1.OrdersAction translates to a URL mapping of section1/orders.cfc
