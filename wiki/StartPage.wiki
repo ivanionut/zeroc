@@ -1,0 +1,11 @@
+#summary One-sentence summary of this page.
+
+= Getting Started =
+ZeroC takes a different approach to most. Instead of including parts of the framework into your application your application Extends the base Application of ZeroC. This allows you, the developer, an endless amount of control as to how much, or how little, you want to use ZeroC.
+
+To Start using ZeroC drop the ZeroC directory sturcture in the root, or in your application, and extend the ApplicationAbstract and defined an application name. 
+
+{{{
+<cfcomponent extends="com.cfinnovate.zeroc.core.ApplicationAbstract">
+    <cfset this.name = "QuickStart" />
+}}}
